@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💔 The Story 💔</title>
+    <title>💔 The One That Got Away 💔</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -12,70 +12,76 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: #d0d0d0;
         }
         .container {
             max-width: 700px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
             padding: 60px;
             text-align: center;
-            border: 2px solid #8b7355;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
+            border: 2px solid #5a4a4a;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
         }
-        .broken-heart { font-size: 100px; margin-bottom: 30px; animation: pulse 2s ease-in-out infinite; }
-        @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(0.95)} }
-        h1 { color: #d4a574; font-size: 2.8em; margin-bottom: 20px; letter-spacing: 3px; font-weight: normal; }
-        .subtitle { color: #a0826d; font-size: 1.3em; margin-bottom: 40px; font-style: italic; }
+        .broken-heart { font-size: 120px; margin-bottom: 30px; animation: crack 3s ease-in-out infinite; }
+        @keyframes crack { 
+            0%,100%{transform:scale(1) rotate(0deg)} 
+            25%{transform:scale(0.98) rotate(-2deg)} 
+            75%{transform:scale(0.98) rotate(2deg)} 
+        }
+        h1 { color: #ff6b6b; font-size: 2.5em; margin-bottom: 10px; font-weight: bold; }
+        .subtitle { color: #a0a0a0; font-size: 1.1em; margin-bottom: 40px; font-style: italic; }
         .story { 
-            color: #c9c9c9; 
-            font-size: 1.1em; 
-            line-height: 2; 
+            color: #e8e8e8; 
+            font-size: 1.15em; 
+            line-height: 2.2; 
             margin: 40px 0;
             text-align: left;
         }
-        .story p { margin-bottom: 20px; }
-        .highlight-sad { color: #e8a87c; font-weight: bold; font-size: 1.15em; }
-        .timeline {
-            margin: 50px 0;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 4px solid #8b7355;
-            text-align: left;
-        }
-        .timeline-item { margin: 15px 0; color: #d4a574; }
-        .reflection {
-            background: rgba(139, 115, 85, 0.1);
+        .story p { margin-bottom: 25px; }
+        .highlight-sad { color: #ff8787; font-weight: bold; font-size: 1.1em; }
+        .raw-emotion {
+            background: rgba(255, 107, 107, 0.1);
             padding: 30px;
             border-radius: 10px;
+            margin: 35px 0;
+            font-size: 1.1em;
+            line-height: 2;
+            color: #ffb0b0;
+            border-left: 5px solid #ff6b6b;
+        }
+        .raw-emotion p { margin-bottom: 15px; }
+        .harsh-truth {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 25px;
             margin: 30px 0;
+            border-radius: 8px;
+            color: #ffcccc;
             font-size: 1.05em;
             line-height: 1.9;
-            color: #b8b8b8;
-            font-style: italic;
+            font-weight: bold;
         }
         .footer { 
             margin-top: 50px; 
-            color: #8b7355; 
-            font-size: 0.95em;
-            border-top: 1px solid #8b7355;
+            color: #8b7a7a; 
+            font-size: 0.9em;
+            border-top: 1px solid #5a4a4a;
             padding-top: 20px;
         }
-        .creator { color: #d4a574; font-weight: bold; }
+        .creator { color: #ff6b6b; font-weight: bold; }
         @media (max-width: 768px) {
             .container { padding: 40px 25px; }
-            .broken-heart { font-size: 70px; }
-            h1 { font-size: 2.2em; }
+            .broken-heart { font-size: 80px; }
+            h1 { font-size: 2em; }
             .story { font-size: 1em; }
         }
         @media (max-width: 480px) {
             body { padding: 10px; }
             .container { padding: 25px 15px; }
             .broken-heart { font-size: 60px; }
-            h1 { font-size: 1.8em; }
+            h1 { font-size: 1.6em; }
             .story { font-size: 0.95em; line-height: 1.8; }
         }
     </style>
@@ -84,45 +90,50 @@
     <div class="container">
         <div class="broken-heart">💔</div>
 
-        <h1>The One That Got Away</h1>
-        <div class="subtitle">A story of love, hope, and heartbreak</div>
+        <h1>i loved her</h1>
+        <div class="subtitle">and she didnt love me back</div>
 
         <div class="story">
-            <p>They say the hardest thing about loving someone is knowing when to let them go. I learned that the hard way.</p>
+            <p>i dont even know where to start like how do you explain to someone what its like when your whole world revolves around one person and then they just say no like that thats it your done</p>
 
-            <p>I saw her, and everything changed. She wasn't just beautiful—it was something deeper. <span class="highlight-sad">Her eyes, her smile, the way she carried herself</span>. Every little thing about her made my heart skip a beat. I couldn't stop thinking about her. I didn't want to.</p>
+            <p>i saw her and everything just changed instantly i wasnt even looking for this i wasnt trying to fall for anyone but there she was and i couldnt stop myself <span class="highlight-sad">her eyes her laugh the way she moved</span> everything about her was like a song stuck in my head that i didnt want to forget</p>
 
-            <p>I spent sleepless nights thinking about the perfect way to tell her. How do you put into words what someone means to you? How do you make them understand that they're not just another person—they're the person?</p>
+            <p>i spent months thinking about her like literally every single day every moment i was awake i was thinking about what it would be like if she felt the same way if maybe one day id get to tell her how i felt and shed just get it hed understand</p>
 
-            <p>So I tried. I poured my heart out. <span class="highlight-sad">I told her everything I felt, every reason why she was special to me.</span> I was terrified, but I had to know. I had to try.</p>
-
-            <p>But sometimes, no matter how much you love someone, it's just not enough. She said no. And just like that, my world shifted.</p>
+            <p>i was so scared but i had to do it right i had to make her understand that this wasnt just some random crush this was real this was <span class="highlight-sad">the most real thing ive ever felt</span> i love her so much it physically hurt</p>
         </div>
 
-        <div class="timeline">
-            <div class="timeline-item">📅 The moment I fell for her</div>
-            <div class="timeline-item">💭 Countless nights of thinking about her</div>
-            <div class="timeline-item">🎵 A song playing in the background</div>
-            <div class="timeline-item">💌 The confession</div>
-            <div class="timeline-item">💔 The rejection</div>
-            <div class="timeline-item">🌙 Here, alone with my thoughts</div>
+        <div class="raw-emotion">
+            <p>i told her everything i poured my whole heart out like made this whole page with a song and everything i was shaking the whole time i was so nervous but also so hopeful like maybe this would be the moment that changed everything</p>
+
+            <p>and then she said no</p>
+
+            <p>just like that all of it was gone the moment i was waiting for the moment that was supposed to change my life just disappeared and i was left standing there with nothing</p>
         </div>
 
-        <div class="reflection">
-            <p>"They say love is the greatest gift you can give someone. But what about when that gift isn't wanted? What about when all you have to offer isn't enough? Maybe that's the real tragedy—not that she said no, but that I'll never know if things could have been different. Maybe in another life, another time, another version of me... maybe then it would have worked. But in this one, I'm left with memories and what-ifs."</p>
+        <div class="harsh-truth">
+            <p>the worst part isnt even the rejection its that now i have to see her knowing that she knows i love her and she doesnt feel the same way and theres nothing i can do to change that like i cant make her feel something she doesnt feel and that kills me every single day</p>
         </div>
 
         <div class="story">
-            <p>I loved her. I really did. With everything I had. She was my favorite person, my greatest inspiration. Even though she doesn't feel the same way, that doesn't change what I felt. What I still feel.</p>
+            <p>i loved her with everything i had like i gave her all of me and it wasnt enough and now i have to live with that knowing that i wasnt enough for her that there was something missing in me that made her say no</p>
 
-            <p>Maybe this is part of life. Maybe heartbreak is just the price we pay for being brave enough to love. And if that's the case, then at least I can say I tried. At least I know what it feels like to love someone with all your heart, even if they don't love you back.</p>
+            <p>people say there are other fish in the sea or youll find someone better but they dont get it they dont understand what it feels like to love one specific person so badly that the thought of being with anyone else feels like a betrayal like im settling like im giving up on what i really want</p>
 
-            <p>So here's to Siba. Here's to the girl who made me feel alive, even if it was just for a moment. <span class="highlight-sad">I loved you. I still do.</span> And I always will.</p>
+            <p>and the worst thing is i still love her i still think about her all the time even though i know i shouldnt even though it makes everything hurt worse i still catch myself thinking about her and smiling and then remembering that she doesnt want me and it feels like dying all over again</p>
+
+            <p>i had this whole future planned out in my head with her and now i have to delete all of that and pretend like it never happened but it did happen and i remember every second of it</p>
+        </div>
+
+        <div class="raw-emotion">
+            <p>so here it is the truth siba you were everything to me and you still are even though you said no my heart still belongs to you even though you dont want it i loved you with everything i had and i always will and thats the hardest part knowing that no matter what i do no matter how much time passes im always going to remember you and what we could have been</p>
+
+            <p>i hope you know that at least i tried i was brave enough to tell you how i felt even though it destroyed me and maybe thats worth something maybe someday youll understand that what i felt was real and it mattered even if it didnt matter to you</p>
         </div>
 
         <div class="footer">
-            <p>~ Made by <span class="creator">Amer</span> ~</p>
-            <p style="margin-top: 10px; color: #6b5c52;">Sometimes the heart breaks not because love was wrong,<br>but because it was real.</p>
+            <p>made by <span class="creator">amer</span></p>
+            <p style="margin-top: 15px color #7a7a7a">i gave you my heart and you broke it</p>
         </div>
     </div>
 </body>
